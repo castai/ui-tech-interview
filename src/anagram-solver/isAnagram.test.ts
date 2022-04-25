@@ -7,6 +7,8 @@ describe("isAnagram", () => {
     ["aaaba", "abaaa", true],
     ["qwerty", "qwertyy", false],
     ["abdc", "cbaa", false],
+    ["abdc", "abdce", false],
+    ["abdce", "abdc", false],
   ])("%p and %p is anagram? %p", (strA, strB, expected) => {
     expect(isAnagram(strA, strB)).toBe(expected);
   });
